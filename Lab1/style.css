@@ -12,16 +12,18 @@ body {
 .grid-wrapper {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    padding: 0px;
     background: powderblue;
     min-height: 100%;
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     background-color: cornflowerblue;
     font: Verdana;
     font-weight: bold;
     min-height: 50px;
+    font-size: 25px;
 }
 
 .content {
@@ -59,6 +61,11 @@ body {
     background-color: green;
 }
 
+p {
+    padding: 20px 15px;
+    font-size: 28px;
+}
+
 .item5 {
     text-align: center;
     font: Noto sans;
@@ -74,14 +81,18 @@ body {
 }
 
 .footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     background-color: cornflowerblue;
     font: Verdana;
     font-weight: bold;
     min-height: 50px;
+    font-size: 25px;
 }
 
-
-
+.footer>div {
+    margin: 2% 5%;
+}
 
 .item3>img {
     max-width: 100%;
@@ -93,40 +104,33 @@ body {
 }
 
 .grid-wrapper>div {
-
-    padding: 10px;
     text-align: center;
-    font-size: 30px;
 }
 
-.item1>div {
+#x {
     float: right;
-    margin: 2% 2%;
-    padding: 1px 10px;
+    margin: 2%;
+    padding: 0px auto;
     width: auto;
     background-color: #ffffff;
-    border: 1px #000000 solid;
-    font-size: 25px;
+    border: 2px #000000 solid;
+    font-size: 20px;
+    text-align: center;
 }
 
-.item7>div {
+#y {
     float: right;
-    margin: 5% 2%;
-    padding: 1px 10px;
+    margin: 5%;
+    padding: 5%;
     width: auto;
     background-color: #ffffff;
-    border: 1px #000000 solid;
+    border: 2px #000000 solid;
     font-size: 25px;
+    text-align: center;
 }
 
-.item1>p,
-.item7>p {
-    float: left;
-    margin: 5% 2%;
-    padding: 1px 10px;
-
-    color: #000000;
-    font-size: 25px;
+#copyright {
+    padding: 2%;
 }
 
 #menu {
@@ -135,5 +139,5 @@ body {
 
 #menu>li {
     display: inline;
-    padding-right: 5px;
+    padding-right: 2%;
 }
