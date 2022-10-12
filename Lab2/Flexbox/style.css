@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: powderblue;
+    min-height: 100%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: cornflowerblue;
+    font: Verdana;
+    font-weight: bold;
+    min-height: 50px;
+    font-size: 25px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.item2 {
+    text-align: center;
+    font: Noto sans;
+    background-color: crimson;
+    min-height: 50px;
+}
+
+.item3 {
+    text-align: center;
+    font: Noto sans;
+    flex: 1;
+}
+
+.right {
+    text-align: center;
+    font: Noto sans;
+    background-color: green;
+}
+
+p {
+    padding: 20px 15px;
+    font-size: 28px;
+}
+
+.item5 {
+    text-align: center;
+    font: Noto sans;
+    flex: 1;
+}
+
+.item6 {
+    text-align: center;
+    font: Noto sans;
+    color: white;
+    min-height: 100px;
+    background-color: purple;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: cornflowerblue;
+    font: Verdana;
+    font-weight: bold;
+    min-height: 50px;
+    font-size: 25px;
+}
+
+.footer>div {
+    margin: 2% 5%;
+}
+
+.item3>img {
+    max-width: 100%;
+}
+
+.item4>p,
+.item5>p {
+    padding: 5px 5px;
+}
+
+.grid-wrapper>div {
+    text-align: center;
+}
+
+#x {
+    float: right;
+    margin: 2%;
+    padding: 0px auto;
+    width: auto;
+    background-color: #ffffff;
+    border: 2px #000000 solid;
+    font-size: 20px;
+    text-align: center;
+}
+
+#y {
+    float: right;
+    margin: 5%;
+    padding: 5%;
+    width: auto;
+    background-color: #ffffff;
+    border: 2px #000000 solid;
+    font-size: 25px;
+    text-align: center;
+}
+
+#copyright {
+    padding: 2%;
+}
+
+#menu {
+    float: left;
+}
+
+#menu>li {
+    display: inline;
+    padding-right: 2%;
+}
