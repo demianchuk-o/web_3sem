@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: table;
+    height: 100%;
+    background-color: powderblue;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.header {
+    display: table-cell;
+    background-color: cornflowerblue;
+    font: Verdana;
+    font-weight: bold;
+    min-height: 50px;
+    font-size: 25px;
+}
+
+.content {
+    height: 100%;
+}
+
+.leftcell {
+    display: table-cell;
+    width: 25%;
+}
+
+.left {
+    display: table;
+    background-color: yellow;
+    height: 100%;
+}
+
+.middlecell {
+    display: table-cell;
+    width: 50%;
+}
+
+.section {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.item2 {
+    text-align: center;
+    vertical-align: top;
+    font: Noto sans;
+    background-color: crimson;
+    height: 10%;
+}
+
+.item3 {
+    text-align: center;
+    font: Noto sans;
+}
+
+.right {
+    display: table-cell;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    font: Noto sans;
+    background-color: green;
+}
+
+p {
+    padding: 20px 15px;
+    font-size: 28px;
+}
+
+.item5 {
+    text-align: center;
+    vertical-align: top;
+    font: Noto sans;
+}
+
+.item6 {
+    text-align: center;
+    font: Noto sans;
+    color: white;
+    min-height: 100px;
+    background-color: purple;
+}
+
+.footer {
+    display: table-cell;
+    background-color: cornflowerblue;
+    font: Verdana;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.footer>div {
+    margin: 2% 5%;
+}
+
+.item3>img {
+    max-width: 100%;
+}
+
+.item4>p,
+.item5>p {
+    padding: 5px 5px;
+}
+
+.wrapper>div {
+    text-align: center;
+}
+
+#x {
+    float: right;
+    margin: 1% 4%;
+    padding: 1%;
+    width: auto;
+    background-color: #ffffff;
+    border: 2px #000000 solid;
+    font-size: 20px;
+    text-align: center;
+}
+
+#y {
+    float: right;
+    margin: 3% 4%;
+    padding: 1%;
+    width: auto;
+    background-color: #ffffff;
+    border: 2px #000000 solid;
+    font-size: 25px;
+    text-align: center;
+    height: 5%;
+}
+
+#copyright {
+    float: left;
+    padding: 2%;
+}
+
+#menu {
+    margin: 2%;
+    float: left;
+    width: 75%;
+}
+
+#menu>li {
+    display: inline;
+    padding: 2%;
+}
