@@ -74,7 +74,7 @@ body {
     position: absolute;
     bottom: 0px;
     height: 90%;
-    width: auto;
+    aspect-ratio: 564/550;
     left: 0;
     right: 0;
     margin: auto;
@@ -84,6 +84,7 @@ body {
 
 .item3>img:hover {
     height: 100%;
+    aspect-ratio: 564/550;
     filter: grayscale(0%);
     transition: 1s;
 }
