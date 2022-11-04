@@ -62,14 +62,17 @@ body {
 
 .item2 {
     display: flex;
+    background-color: #474747;
+    min-height: 50px;
+}
+
+.item2>h3 {
     align-items: center;
     justify-content: center;
     font-family: Verdana, Tahoma, sans-serif;
     font: Verdana;
     font-size: 1 rem;
-    background-color: #474747;
     color: #DAD2D8;
-    min-height: 50px;
 }
 
 .item3 {
