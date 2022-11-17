@@ -1,7 +1,7 @@
 html,
 body {
     width: 100%;
-    height: max-content;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
@@ -13,7 +13,7 @@ body {
 }
 
 .flex-wrapper {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -45,6 +45,7 @@ body {
     align-items: center;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 }
 
 #logo-link {
@@ -56,7 +57,8 @@ body {
 }
 
 #menu {
-    margin-left: 12px;
+    display: flex;
+    gap: 10px;
 }
 
 #burger {
@@ -66,7 +68,6 @@ body {
 .icon {
     height: 24px;
     width: 24px;
-    margin-left: 10px;
 }
 
 .icon>img {
@@ -80,7 +81,8 @@ body {
 }
 
 .main-content {
-    width: 80%;
+    position: relative;
+    max-width: 1200px;
     height: 100%;
     background-color: #494399;
     display: flex;
@@ -95,6 +97,7 @@ body {
     margin: 2px auto;
     width: 360px;
     z-index: 1;
+    overflow: hidden;
 }
 
 .left {
@@ -117,6 +120,7 @@ body {
     margin-top: 20px;
     margin-bottom: auto;
     width: 100%;
+    display: block;
 }
 
 .right {
@@ -171,8 +175,7 @@ body {
     }
 
     #burger {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: unset;
     }
 
     #background-shape {
@@ -181,8 +184,20 @@ body {
         right: 0;
     }
 
+    #logo-link,
+    #menu {
+        width: 95px;
+    }
+
+    .header-content {}
+
     .left {
         font-size: 1rem;
+    }
+
+    .left>img {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .main-content {
