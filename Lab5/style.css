@@ -163,6 +163,7 @@ p {
 .footer {
     display: flex;
     flex-direction: row;
+    justify-content: start;
     background-color: #DAD2D8;
     font: Verdana;
     font-weight: bold;
@@ -195,7 +196,7 @@ p {
     flex: 0.15;
 }
 
-#x>img {
+#logo {
     height: 10vmin;
     padding: 4%;
 }
