@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better Call Saul!</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
     <div class="flex-wrapper">
         <header class="header">
             <div id="hello">
                 <h1>Hi, I'm Saul Goodman.</h1>
             </div>
-            <div id="x"><img src="images/Better-Call-Saul-Logo-Transparent-PNG.png" alt=""></div>
+            <div id="x"><img id="logo" src="images/Better-Call-Saul-Logo-Transparent-PNG.png" alt=""></div>
         </header>
         <main class="content">
             <aside class="left">
@@ -57,10 +59,27 @@
             </aside>
             <section class="section">
                 <div class="item3"><img src="images/saul2.png">
+                    <div id="task2">
+                        Завдання 2
+                        <input type="text" id="a_input" placeholder="a">
+                        <input type="text" id="b_input" placeholder="b">
+                        <button onclick="calc_ellipse()">Порахувати</button>
+                        <div id="answer2"></div>
+                    </div>
+                    <div id="task3">
+                        Завдання 3
+                        <button id="open-dialog">Відкрити діалог</button>
+                        <dialog id="task3dialog">
+                            <form name="task3" action="index.js" onsubmit="count_words()" method="dialog">
+                                <input type="text" name="input_text">
+                                <input type="submit" value="Порахувати к-ть слів">
+                            </form>
+
+                        </dialog>
+                    </div>
                 </div>
                 <div class="item6">
-                    <p>"I'M GONNA BE A DAMN GOOD LAWYER, AND PEOPLE ARE GONNA KNOW
-                        ABOUT IT."</p>
+                    I'm gonna be a damn good lawyer, and people are gonna know about it!
                 </div>
             </section>
 
@@ -90,11 +109,10 @@
 
         </main>
         <footer class="footer">
-            <div id="copyright">Copyright &copy 2022 Demianchuk O., lab 3</div>
-
             <div id="y">(505) 503-4455 Call Saul Now!</div>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
