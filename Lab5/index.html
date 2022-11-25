@@ -24,7 +24,7 @@
                 <div class="item2">
                     <h3>About me</h3>
                 </div>
-                <div class="item5">
+                <div id="item5">
                     <p>Did you know
                         that you have rights? The constitution says you do!
                         And so do I.
@@ -68,14 +68,10 @@
                     </div>
                     <div id="task3">
                         Завдання 3
-                        <button id="open-dialog">Відкрити діалог</button>
-                        <dialog id="task3dialog">
-                            <form name="task3" action="index.js" onsubmit="count_words()" method="dialog">
-                                <input type="text" name="input_text">
-                                <input type="submit" value="Порахувати к-ть слів">
-                            </form>
-
-                        </dialog>
+                        <form name="task3" action="index.js" method="dialog">
+                            <input type="text" name="input_text">
+                            <button id="task3button">Порахувати</button>
+                        </form>
                     </div>
                 </div>
                 <div class="item6">
@@ -83,7 +79,7 @@
                 </div>
             </section>
 
-            <aside class="right">
+            <aside class="right" id="item4">
                 <ul id="seasons">
                     <li>
                         <div class="season"><a href="https://youtu.be/khWb5DogPgU">Season 1</a></div>

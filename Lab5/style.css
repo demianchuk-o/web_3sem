@@ -250,6 +250,12 @@ li>a:hover {
     transition: 400ms;
 }
 
+#task3dialog {
+    margin: auto;
+    padding: 10px 20px;
+
+}
+
 @media (max-width: 700px) {
     .content {
         flex-direction: column;
