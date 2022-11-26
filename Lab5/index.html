@@ -13,7 +13,7 @@
 <body>
 
     <div class="flex-wrapper">
-        <header class="header">
+        <header class="header" id="item1">
             <div id="hello">
                 <h1>Hi, I'm Saul Goodman.</h1>
             </div>
@@ -86,19 +86,15 @@
                         </form>
                     </div>
                     <div id="task5" class="task">
-                        <ol id="task5list">
-                            <li id="1">Block 1</li>
-                            <li id="2">Block 2</li>
-                            <li id="3">Block 3</li>
-                            <li id="4">Block 4</li>
-                            <li id="5">Block 5</li>
-                            <li id="6">Block 6</li>
-                            <li id="7">Block 7</li>
+                        <ol id="task5list" type="1" start="1">
+                            <li id="1" class="task5li">1</li>
+                            <li id="2" class="task5li">2</li>
+                            <li id="3" class="task5li">3</li>
+                            <li id="4" class="task5li">4</li>
+                            <li id="5" class="task5li">5</li>
+                            <li id="6" class="task5li">6</li>
+                            <li id="7" class="task5li">7</li>
                         </ol>
-                        <form action="index.js" name="task5form">
-                            <input type="text" name="" id="task5text">
-                            <button name="btn">Редагувати</button>
-                        </form>
                     </div>
                 </div>
                 <div class="item6">
@@ -131,7 +127,7 @@
 
 
         </main>
-        <footer class="footer">
+        <footer class="footer" id="item7">
             <div id="y">(505) 503-4455 Call Saul Now!</div>
         </footer>
     </div>

@@ -109,14 +109,38 @@ task4.addEventListener('dblclick', () => {
 
 const task5 = document.getElementById('task5list');
 
-const lines = task5.children;
+const lines = document.getElementsByClassName('task5li');
 
-document.forms['task5form'].style.display = 'none';
-
-lines.forEach(element => {
-    element.addEventListener('select', () => {
-        document.forms['task5form'].style.display = 'block';
-        document.forms['task5form'][b];
+for (let i = 0; i < lines.length; i++) {
+    lines[i].addEventListener('click', () => {
+        if (document.getElementById('task5form') == undefined) {
+            const oldContent = document.getElementById(`item${i + 1}`).innerHTML;
+            document.getElementById(`item${i + 1}`).innerHTML += `
+            <form action="index.js" id="task5form">
+                <input type="text" id ="task5text">
+                <button id="edit">Редагувати</button>
+            </form >`;
+            document.getElementById('edit').onclick = () => {
+                const btn = `<button id='cancel'>Відмінити</button>`;
+                const oldFontStyle = document.getElementById(`item${i + 1}`).style.fontStyle;
+                document.getElementById(`item${i + 1}`).innerHTML = document.getElementById('task5text').value + btn;
+                document.getElementById(`item${i + 1}`).style.fontStyle = 'italic';
+                localStorage.setItem(`item${i + 1}`, document.getElementById(`item${i + 1}`).innerHTML);
+                document.getElementById('cancel').onclick = () => {
+                    localStorage.removeItem(`item${i + 1}`);
+                    document.getElementById(`item${i + 1}`).innerHTML = oldContent;
+                    document.getElementById(`item${i + 1}`).style.fontStyle = oldFontStyle;
+                }
+            }
+        }
     })
-});
+}
 
+function changeContent(id, newContent) {
+    const oldContent = document.getElementById(id).innerHTML;
+    const btn = `<button id='cancel'>Відмінити</button>`
+    document.getElementById(id).innerHTML = newContent + btn;
+    document.getElementById('cancel').onclick = (id) => {
+        document.getElementById(id).innerHTML = oldContent;
+    }
+}

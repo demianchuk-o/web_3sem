@@ -257,19 +257,13 @@ li>a:hover {
 #task3dialog {
     margin: auto;
     padding: 10px 20px;
-
 }
 
-#task5list>li {
-    display: inline-block;
-    width: 100%;
+
+.task5li {
+    width: auto;
     color: #474747;
     font: 1.3rem Verdana;
-}
-
-#task5list>li:hover {
-    color: #EC9A29;
-    font-size: 1.5rem;
 }
 
 @media (max-width: 700px) {
